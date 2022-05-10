@@ -7,14 +7,14 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class RegisterPage implements OnInit {
 
-  loginForm;
+  registerForm;
   constructor(private fb: FormBuilder) {
-    this.loginForm = this.fb.group({
+    this.registerForm = this.fb.group({
       uname: ['', Validators.required],
-      email:['', Validators.email],
+      email:['', [Validators.email,Validators.required]],
       password: ['', [Validators.pattern,
-                      Validators.minLength(8),
-                      Validators.maxLength(16)]]
+                      Validators.required,
+                      Validators.minLength(8)]]
     })
   }
   ngOnInit() {
