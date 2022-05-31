@@ -6,9 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./bottone-pagina.component.scss'],
 })
 export class BottonePaginaComponent implements OnInit {
-  @Input() testo:string;
+  @Input() testo: string;
+  
+  @Input()isUnchanged = true;
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

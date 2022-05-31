@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of autori.list">
+      <app-author nomeCompleto="{{item.viewValue}}" id="{{item.value}}" (click)="selezione(item)">
+      </app-author>
+    </div>
+
+  </ion-list>
+</ion-content>

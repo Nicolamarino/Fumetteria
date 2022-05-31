@@ -18,6 +18,7 @@ import { CustomLinkComponent } from 'src/app/components/custom-link/custom-link.
     IonicModule,
     LoginPageRoutingModule,
     ReactiveFormsModule,
+    
   ],
   declarations: [LoginPage, TitoloPaginaComponent,BottonePaginaComponent,CustomLinkComponent,]
 })
